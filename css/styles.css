@@ -1,6 +1,6 @@
 *
 {
-    box-sizing:border-box;
+   box-sizing:border-box;
 }
 
 
@@ -25,6 +25,7 @@
   font-optical-sizing: auto;
   font-weight: 550;
   font-style: normal;*/
+
 a
 {
     color:white;
@@ -49,30 +50,39 @@ ul
 }
 header
 {
+   position:relative;
     display:flex;
     flex-direction:column;
     color:white;
     background:var(--bg-color-right);
-    padding:2%;
+    padding:15px;
     margin-bottom:2%;
     justify-content:space-between
-
 }
+
 #header-hover
 {
+  
   font-size:0.9rem;
   justify-content: space-around;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+  border-radius:33px
 }
 
-
+#lists
+{
+  padding:15px;
+}
 #btn
 {
-   align-self:flex-end;
+   align-self:flex-start;
   text-align: center;
    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
    border-radius:20px;
    font-size:0.7rem;
    padding:5px;
+   margin-top:15px;
+   margin-bottom: 5px;
 }
 #btn:hover
 {
@@ -83,25 +93,34 @@ header
 {
   display:flex;
   flex-direction: row;
+  text-align: center;
 }
 #container-header
 {
   display:flex;
   flex-direction: row;
 }
+
 .text
 { display:flex;
-  justify-content: center;
+  justify-content: space-between;
+
   flex-direction:row;
   text-align: center;
   margin-left:35px;
 }
 #photo-w-me
 {
- width: 150px;
- height:150px;
-  border-radius:70%;
-   box-shadow: 0 0 6px rgba(255, 255, 255, 0.6)
+   float:right;
+flex-wrap: wrap;
+ margin:30px;
+ max-width: 160px;
+ max-width:160;
+border-radius:70%;
+  padding:3px;
+   box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  
+
 }
 
 #photo-w-me:hover
@@ -124,7 +143,11 @@ header
   border-radius: 10px;
   box-shadow: 0 0 6px rgba(0,0,0,0.6);
 }
-
+#about
+{
+  text-align: left;
+  margin-top:30px;
+}
 main
 {
 
@@ -145,17 +168,20 @@ main
 {
    background:var(--bg-color-left);
     margin-right:10px;
-    padding:10%;
+    padding:11%;
 
 }
 
 #right h3
 {
   font-size:1.5rem;
-  margin-bottom:15%;;
+  margin-bottom:8%;;
 }
 
-
+#right li
+{
+  margin-bottom:3%;
+}
 
 footer
 {
@@ -256,4 +282,51 @@ a:hover
  #lists li
 {
   margin-bottom: 5px;
+}
+
+
+@media (max-width: 428px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .row-elements {
+    flex-direction: column; 
+  }
+
+  #img-container {
+    margin: 0 auto;       
+  }
+footer
+{
+  font-size:0.65rem;
+}
+  #photo-w-me {
+
+    display: block;
+  }
+      #right {
+    order: 1;
+    margin-bottom:10px;
+
+  }
+  #left {
+    order: 2;
+
+  }
+}
+
+
+@media screen and (min-width: 1700px)
+{
+#photo-w-me
+{
+  position:absolute;
+  top:0;
+  right:0;
+  margin-bottom:30px;
+}
 }
