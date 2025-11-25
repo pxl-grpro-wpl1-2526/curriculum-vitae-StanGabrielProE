@@ -29,19 +29,23 @@ a
 {
     color:white;
 }
-h1,h2,h2,h4,h5,a,.quote,#btn
+h1,h2,h3,h4,h5,a,.quote,#btn
 {
    font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal; 
 }
-p
+p,li
 {
      font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 550;
   font-style: normal 
+}
+ul
+{
+  list-style-type:circle;
 }
 header
 {
@@ -104,6 +108,7 @@ header
 {
  box-shadow: 0 0 15px rgb(248, 246, 246)
 }
+
 .red-word
 {
     color:red;
@@ -140,9 +145,18 @@ main
 {
    background:var(--bg-color-left);
     margin-right:10px;
-    padding:2%;
+    padding:10%;
 
 }
+
+#right h3
+{
+  font-size:1.5rem;
+  margin-bottom:15%;;
+}
+
+
+
 footer
 {
     margin-top:2%;
@@ -239,3 +253,7 @@ a:hover
 #comunication {
     width: 84.6%;
  }
+ #lists li
+{
+  margin-bottom: 5px;
+}
