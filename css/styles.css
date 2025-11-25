@@ -89,6 +89,7 @@ footer
   position: relative;
   height: 3px;
   margin: 8px 0;
+  padding:2%;
 }
 
 .skill-bar {
@@ -103,11 +104,27 @@ footer
   background: #aca9a9;
 }
 
-.skill-bar.black {
+.skill-bar.color {
   width: 90%;
   background: orange;
 }
 .skill-bar-text {
   display: flex;
   justify-content: space-between;
+}
+#java-script {
+    width: 60%;
+    background: orange; 
+}
+#html {
+    width: 60%; 
+    background: orange; 
+}
+#css { 
+    width: 50%;
+    background: orange; 
+}
+#sql { 
+    width: 70%; 
+    background: orange; 
 }
