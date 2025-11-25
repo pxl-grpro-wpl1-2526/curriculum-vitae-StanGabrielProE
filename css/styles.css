@@ -54,6 +54,38 @@ header
     justify-content:space-between
 
 }
+
+.text
+{
+  text-align: center;
+  margin-left:35px;
+}
+#photo-w-me
+{
+ width: 150px;
+ height:150px;
+  border-radius:70%;
+   box-shadow: 0 0 6px rgba(255, 255, 255, 0.6)
+}
+
+#btn
+{
+  margin-top:1rem;
+  text-align: center;
+   box-shadow: 0 0 6px rgba(255, 255, 255, 0.6)
+}
+
+.red-word
+{
+    color:red;
+}
+#author
+{
+    position:relative;
+    top:6px;
+    left:6px;
+    font-size:0.68rem;
+}
 .content{
   border-radius: 10px;
   box-shadow: 0 0 6px rgba(0,0,0,0.6);
@@ -73,6 +105,8 @@ main
     margin-right:10px;
     padding:2%;
 }
+
+
 #right
 {
    background:var(--bg-color-left);
@@ -82,15 +116,30 @@ main
 }
 footer
 {
+    margin-top:2%;
     color:white;
     background:var(--bg-color-right);
+}
+
+
+/* skill bars*/
+.skill-bars {
+  padding: 5px;
+}
+.skill-bars h5
+{
+  font-size:0.65rem;
+}
+.skill-bars h4 :hover
+{
+  font-size:1.1rem;
 }
 .skill-bar-containter {
   position: relative;
   height: 3px;
   margin: 8px 0;
-  padding:2%;
 }
+
 
 .skill-bar {
   position: absolute;
@@ -128,3 +177,25 @@ footer
     width: 70%; 
     background: orange; 
 }
+#concretization {
+
+    width: 100%;
+}
+#want-to-study {
+    width: 91.4%;
+}
+#self-management {
+    width: 88.2%;
+}
+#analyzing {
+    width: 66.6%;
+}
+#critical-thinking {
+    width: 90.2%;
+}
+#working-together {
+    width: 84.2%;
+}
+#comunication {
+    width: 84.6%;
+ }
