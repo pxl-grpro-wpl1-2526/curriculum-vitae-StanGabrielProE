@@ -1,3 +1,10 @@
+*
+{
+    box-sizing:border-box;
+}
+
+
+
 :root {
   --bg-color-left: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(215, 219, 224, 1) 74%, rgba(197, 203, 227, 1) 100%);
   --bg-color-right: linear-gradient(90deg, rgba(22, 31, 33, 1) 0%, rgba(34, 38, 54, 1) 50%, rgba(38, 42, 64, 1) 100%);
@@ -18,7 +25,10 @@
   font-optical-sizing: auto;
   font-weight: 550;
   font-style: normal;*/
-
+a
+{
+    color:white;
+}
 h1,h2,h2,h4,h5,a,.quote,#btn
 {
    font-family: "Orbitron", sans-serif;
@@ -35,6 +45,69 @@ p
 }
 header
 {
+    display:flex;
+    flex-direction:row;
     color:white;
     background:var(--bg-color-right);
+    padding:2%;
+    margin-bottom:2%;
+    justify-content:space-between
+
+}
+.content{
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
+main
+{
+
+    display:grid;
+    grid-template-columns: 0.85fr 3fr;
+    
+}
+#left
+{
+    color:white;
+   background:var(--bg-color-right);
+    margin-right:10px;
+    padding:2%;
+}
+#right
+{
+   background:var(--bg-color-left);
+    margin-right:10px;
+    padding:2%;
+
+}
+footer
+{
+    color:white;
+    background:var(--bg-color-right);
+}
+.skill-bar-containter {
+  position: relative;
+  height: 3px;
+  margin: 8px 0;
+}
+
+.skill-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 2px;
+}
+.skill-bar.white {
+  width: 100%;
+  background: #aca9a9;
+}
+
+.skill-bar.black {
+  width: 90%;
+  background: orange;
+}
+.skill-bar-text {
+  display: flex;
+  justify-content: space-between;
 }
