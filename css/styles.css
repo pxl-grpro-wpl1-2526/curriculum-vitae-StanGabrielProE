@@ -139,7 +139,18 @@ footer
   height: 3px;
   margin: 8px 0;
 }
+.footer-hover-elements
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around
 
+}
+a:hover
+{
+    font-size:1rem;
+    color:orangered;
+}
 
 .skill-bar {
   position: absolute;
