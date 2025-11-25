@@ -46,7 +46,7 @@ p
 header
 {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     color:white;
     background:var(--bg-color-right);
     padding:2%;
@@ -54,9 +54,41 @@ header
     justify-content:space-between
 
 }
-
-.text
+#header-hover
 {
+  font-size:0.9rem;
+  justify-content: space-around;
+}
+
+
+#btn
+{
+   align-self:flex-end;
+  text-align: center;
+   box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+   border-radius:20px;
+   font-size:0.7rem;
+   padding:5px;
+}
+#btn:hover
+{
+  background-color:orangered;
+  box-shadow: 0 0 6px orangered
+}
+.row-elements
+{
+  display:flex;
+  flex-direction: row;
+}
+#container-header
+{
+  display:flex;
+  flex-direction: row;
+}
+.text
+{ display:flex;
+  justify-content: center;
+  flex-direction:row;
   text-align: center;
   margin-left:35px;
 }
@@ -68,13 +100,10 @@ header
    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6)
 }
 
-#btn
+#photo-w-me:hover
 {
-  margin-top:1rem;
-  text-align: center;
-   box-shadow: 0 0 6px rgba(255, 255, 255, 0.6)
+ box-shadow: 0 0 15px rgb(248, 246, 246)
 }
-
 .red-word
 {
     color:red;
