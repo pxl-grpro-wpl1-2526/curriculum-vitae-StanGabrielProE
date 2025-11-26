@@ -3,8 +3,6 @@
    box-sizing:border-box;
 }
 
-
-
 :root {
   --bg-color-left: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(215, 219, 224, 1) 74%, rgba(197, 203, 227, 1) 100%);
   --bg-color-right: linear-gradient(90deg, rgba(22, 31, 33, 1) 0%, rgba(34, 38, 54, 1) 50%, rgba(38, 42, 64, 1) 100%);
@@ -30,14 +28,14 @@ a
 {
     color:white;
 }
-h1,h2,h3,h4,h5,a,.quote,#btn
+h1,h2,h3,h4,h5,a,.quote,#btn,th
 {
    font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal; 
 }
-p,li
+p,li,td
 {
      font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -177,6 +175,15 @@ main
   font-size:1.5rem;
   margin-bottom:8%;;
 }
+#certifications a
+{
+  color:black
+}
+#certifications a:hover
+{
+  color:orangered;
+  font-size:0.9rem;
+}
 
 #right li
 {
@@ -215,11 +222,7 @@ footer
     justify-content:space-around
 
 }
-a:hover
-{
-    font-size:1rem;
-    color:orangered;
-}
+
 
 .skill-bar {
   position: absolute;
@@ -283,16 +286,85 @@ a:hover
 {
   margin-bottom: 5px;
 }
+.dark-mode body {
+  background: var(--bg-dark-mode); 
+}
+
+.dark-mode #right {
+  color: white; 
+  background:var(--bg-dark-mode-grey)
+}
+.dark-mode #right * {
+  color: white;                 
+}
+
+a:hover
+{
+    font-size:1rem;
+    color:orangered;
+}
+.mobile-lists
+{
+  display:none;
+}
+
+table
+{
+  text-align :center;
+  border-collapse:collapse;
+}
 
 
-@media (max-width: 428px) {
+table td,th
+{
+ 
+   box-shadow: 0 0 6px rgba(0,0,0,0.6);
+   width:250px;
+   height:150px;
+   border:1px solid black;
+   
+}
+th:nth-child(odd)
+{
+  background:var(--bg-color-right);
+  color:white;
+}
+td:nth-child(even)
+{
+  background:var(--bg-color-right);
+  color:white;
+}
+
+
+@media (max-width: 576px) {
   main {
     display: flex;
     flex-direction: column;
   }
 
+#lists
+{
+  display:none;
+}
+.mobile-lists
+{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+  border: 1px solid black; 
+  padding :5%;
+  border-radius: 10px;
+}
 
 
+#title-table
+{
+ display:none;
+}
+ table
+ {
+  display:none;
+ }
   .row-elements {
     flex-direction: column; 
   }
@@ -316,6 +388,11 @@ footer
   #left {
     order: 2;
 
+  }
+  #mobile-center 
+  {
+    font-size : 1.0rem;
+    
   }
 }
 
