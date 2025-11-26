@@ -37,7 +37,7 @@ h1,h2,h3,h4,h5,a,.quote,#btn,th
 }
 p,li,td
 {
-     font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 550;
   font-style: normal 
@@ -70,7 +70,11 @@ header
 #lists
 {
   padding:15px;
+    display:flex;
+  flex-direction:column;
+  justify-content: center;
 }
+
 #btn
 {
    align-self:flex-start;
@@ -109,7 +113,7 @@ header
 }
 #photo-w-me
 {
-   float:right;
+ float:right;
 flex-wrap: wrap;
  margin:30px;
  max-width: 160px;
@@ -150,16 +154,20 @@ main
 {
 
     display:grid;
-    grid-template-columns: 0.85fr 3fr;
+    grid-template-columns: 1fr 3fr;
     
 }
 #left
 {
-    color:white;
-   background:var(--bg-color-right);
-    margin-right:10px;
-    padding:2%;
+  color:white;
+  background:var(--bg-color-right);
+  margin-right:10px;
+  padding:2%;
+      display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 
 #right
@@ -169,6 +177,7 @@ main
     padding:11%;
 
 }
+
 
 #right h3
 {
@@ -335,8 +344,35 @@ td:nth-child(even)
   color:white;
 }
 
+@media (max-width:1100px)
+{
+  #lists
+  {
+    font-size: 0.75rem;
+      display: flex;
 
-@media (max-width: 576px) {
+  justify-content: center;
+  
+
+  }
+  #left h4
+  {
+    font-size: 0.75rem;
+  }
+  ul
+  {
+    
+
+    align-self: left;
+    margin:0;
+    padding:0;
+  }
+  table th
+  {
+    font-size:0.75rem;
+  }
+}
+@media  (max-width: 576px) {
   main {
     display: flex;
     flex-direction: column;
@@ -396,7 +432,16 @@ footer
   }
 }
 
+@media screen and  (min-width: 1400px)
+{
+main
+{
 
+    display:grid;
+    grid-template-columns: 0.7fr 3fr;
+    
+}
+}
 @media screen and (min-width: 1700px)
 {
 #photo-w-me
@@ -406,4 +451,5 @@ footer
   right:0;
   margin-bottom:30px;
 }
+
 }
