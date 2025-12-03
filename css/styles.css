@@ -423,7 +423,7 @@ footer
   }
   #left {
     order: 2;
-
+     display:block;
   }
   #mobile-center 
   {
