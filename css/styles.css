@@ -34,6 +34,7 @@ h1,h2,h3,h4,h5,a,.quote,#btn,th
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal; 
+ 
 }
 p,li,td
 {
@@ -175,6 +176,7 @@ main
    background:var(--bg-color-left);
     margin-right:10px;
     padding:11%;
+    
 
 }
 
@@ -182,7 +184,8 @@ main
 #right h3
 {
   font-size:1.5rem;
-  margin-bottom:8%;;
+  margin-bottom:8%;
+    color :orangered
 }
 #certifications a
 {
@@ -306,7 +309,10 @@ footer
 .dark-mode #right * {
   color: white;                 
 }
-
+.dark-mode #right h3
+{
+    color:orangered;
+}
 a:hover
 {
     font-size:1rem;
@@ -373,11 +379,21 @@ td:nth-child(even)
   }
 }
 @media  (max-width: 576px) {
+body
+{
+  margin:0;
+}
+ #left,#right
+ {
+    border-radius: 0;
+    margin:0;;
+ }
   main {
     display: flex;
     flex-direction: column;
   }
 
+ 
 #lists
 {
   display:none;
@@ -391,8 +407,16 @@ td:nth-child(even)
   padding :5%;
   border-radius: 10px;
 }
-
-
+#right,#left
+{
+  width: 100%;
+  height: 100%;
+   
+}
+footer
+{
+  height :10%;
+}
 #title-table
 {
  display:none;
